@@ -1,10 +1,10 @@
-package com.example.mvvm_example.model
+package com.example.mvvm_example.data.model
 
 class QuoteProvider {
     // Permite acceder a los miembros de la clase sin necesidad de crear una instancia.
     companion object {
 
-        fun random():QuoteModel{
+        fun random(): QuoteModel {
             val position = (0..6).random()
             return quote[position]
         }
